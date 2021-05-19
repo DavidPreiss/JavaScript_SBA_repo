@@ -1,3 +1,26 @@
+<!--
+    X - 3 different pages 
+    O - keep grid system consistent as poss
+    O - Use HTML tables
+    X - 2 Forms
+    X - dropdown menu
+    X - web fonts
+    X - text images videos gifs
+    O - regex validation ???
+
+    X - Inline, 
+    X - internal, 
+    X - external styling
+    O - 5 different css selectors
+
+    X - External javascripts
+    X - Use variables, 
+    X - if statements, 
+    X - loops, 
+    O - at least one form of collections, 
+    X - functions/call back, 
+    O - and events
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +28,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Preiss SBA</title>
+    
+    <link rel="icon" href="AZULA.jpg">
+    <link rel="stylesheet" href="css_SBA.css">
+    <style>
+        body {font-family: Arial, sans-serif;}
+    </style>
 </head>
 <body>
-    <font face="Comic sans MS">
         
     <nav>
         Navigation Bar
@@ -16,7 +44,41 @@
         <p><a href="./DavidSBA.html">Back to DavidSBA.html</a>You Are Here</p>
     </nav>
     
+    <font color="white" face="Comic sans MS">
+        <p>
+            COMIC SANS
+        </p>
     </font>
-<p><a href="https://www.google.com/">Google</a></p>
+    <p style="font-family: 'Times New Roman', Times, serif;">
+        <a href="https://www.google.com/">Google</a>
+    </p>
+
+    <a href="nettyPot.gif" target="_blank">
+		Water Gif
+	</a>
+    <img src="nettyPot.gif"/>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+    
+    <button onclick="dispName()">show name</button>
+    <p id="nameshower">name here</p>
+
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    </form>
+    <button onclick="dispSex()">show gender</button>
+    <p id="sexshower">gender here</p>
+    
+    <img id="seximage" src="" height="200px">
+    <script src="home.js">
+        //script tag should always be at the end of body tag
+            </script>
 </body>
 </html>

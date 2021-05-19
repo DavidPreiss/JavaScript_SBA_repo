@@ -113,7 +113,7 @@ while(stopper <= 10)
 }
 if(guess != userGuess)
 {
-    alert("sorry, the anser was " + guess);
+    alert("sorry, the anwser was " + guess);
 }
 }
     

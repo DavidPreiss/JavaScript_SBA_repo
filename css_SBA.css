@@ -1,0 +1,19 @@
+/*David Preiss*/
+body
+{
+    background-color: black;
+    color: #E46183;
+}
+  
+h1
+{
+    color: #00FF11;
+    margin-left: 20px;
+}
+
+button
+{
+    text-align: center;
+    color: maroon;
+    background-color: tan;
+}
