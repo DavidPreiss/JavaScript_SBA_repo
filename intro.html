@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        Navigation Bar
+        <p><a href="./index.html">Back to index.html</a></p>
+        <p><a href="./intro.html">Back to intro.html</a>You Are Here</p>
+        <p><a href="./DavidSBA.html">Back to DavidSBA.html</a></p>
+    </nav>
+    <h1>
+        welcome to javascript
+    </h1>
+    
+    <button onclick="guessingGame()">Guessing Game!</button>
+    <p id="counter-display">counter</p>
+    <button onclick="countDown()">-</button>
+    <button onclick="countUp()">+</button>
+    <p>Square if integer, repeat if string</p>
+    <input id="userInput" type="text" onchange="squareUserNumber()" />
+    <p id="square-display">wow</p>
+    <input list="cars"/>
+    <datalist id="cars">
+        <option value="BMW"/>
+        <option value="Ford"/>
+    </datalist>
+
+    <p id="gametitle">
+        
+    <button id="WackStartButton" onclick="wackamole()">Start Wack-A-Mole!</button>
+    </p>
+    <p id="hscore">HighScore: </p>
+    <p id="cscore">Score: </p>
+    <button id="button0" onclick="button(0)">O</button>
+    <button id="button1" onclick="button(1)">X</button>
+    <button id="button2" onclick="button(2)">X</button>
+    <p id="temp">empty</p>
+    <script src="date.js">
+//script tag should always be at the end of body tag
+    </script>
+</body>
+</html>
