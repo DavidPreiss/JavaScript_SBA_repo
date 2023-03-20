@@ -98,17 +98,21 @@ let guess = (Math.floor
         (Number(range[1]) - Number(range[0])) + Number(range[0])
     )
     )
-let stopper = 0;
-let userGuess = prompt
-(`Guess a number between ${range[0]} and ${range[1]}`)
-while(stopper <= 10)
+let attempts = 10;
+let quitstring = "x";
+while(attempts > 0)
 {
-    if(guess == userGuess)
+    let userGuess = prompt(`Guess a number between ${range[0]} and ${range[1]}, 
+    you have ${attempts} attempts remaining, 
+    type ${quitstring} to exit`);
+    if(guess == userGuess || userGuess == quitstring)
     {
         alert("You got it: " + userGuess);
         break;
     }
-    userGuess = prompt(`Keep guessing a number between ${range[0]} and ${range[1]}`)
+    
+    attempts--;
+
 
 }
 if(guess != userGuess)
